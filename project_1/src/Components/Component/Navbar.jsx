@@ -9,7 +9,8 @@ function Navbar() {
     { id: 4, link: "/service", name: "Service" },
   ];
   //   CLASS NAME FOR NABLINKS
-  const defaultClasses = "text-(--grayText) dark:text-(--whiteText) font-semibold";
+  const defaultClasses =
+    "text-(--grayText) dark:text-(--whiteText) font-semibold";
   const activeClasses = "text-red-600 font-semibold";
   return (
     <div className="flex flex-col">
@@ -44,7 +45,7 @@ function Navbar() {
       </div>
       {/* NAVBAR FOR SMALL SCREEN  */}
       <div className="sm:hidden ">
-        <div className="flex gap-3 justify-evenly border pb-1 sm:p-2  sm:gap-5 md:gap-12  items-center bg-red-500 text-white">
+        <div className="flex gap-3 justify-evenly pb-1 sm:p-2  sm:gap-5 md:gap-12  items-center bg-red-500 text-white">
           {navLinks?.map((item, index) => (
             <div key={index}>
               <NavLink

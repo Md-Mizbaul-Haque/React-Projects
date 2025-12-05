@@ -1,7 +1,7 @@
 import React from "react";
 
-import Hero_Section from "../Components/Hero_Section";
-import HeroSection_2 from "../Components/Hero_Section_2";
+import Hero_Section from "../Components/Component/Hero_Section";
+import HeroSection_2 from "../Components/Component/Hero_Section_2";
 
 function Home() {
   return (

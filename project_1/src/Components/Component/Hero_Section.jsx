@@ -1,13 +1,13 @@
 import React from "react";
-import girl from "../images/a girl.jpg";
+import girl from '/src/'
 
 function Hero_Section() {
   return (
     <div className="mt-4">
-      <div className=" mx-1   dark:bg-gray-800 shadow-[inset_0_0_20px_0px_var(--grayText)] dark:shadow-[inset_0_0_10px_0px_var(--blueShadow)] rounded-2xl p-3">
+      <div className=" mx-1   dark:bg-gray-800 shadow-[inset_0_0_20px_0px_var(--grayText)] dark:shadow-[inset_0_0_5px_0px_var(--blueShadow)] rounded-2xl p-3">
         <div className="flex justify-around w-full ">
           {/* PROFILE IMG  */}
-          <div className="rounded-full h-30 w-30 sm:w-40 dark:shadow-xl dark:shadow-indigo-900 sm:h-40 md:h-60 md:w-60 lg:h-70 lg:w-70">
+          <div className="rounded-full h-30 w-30 sm:w-40  dark:shadow-[0_0_10px_0_var(--blueShadow)] sm:h-40 md:h-60 md:w-60 lg:h-70 lg:w-70">
             <img
               src={girl}
               alt="profile img"

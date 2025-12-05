@@ -1,5 +1,5 @@
 import React from "react";
-import girl from '/src/'
+import girl from "/src/images/a girl.jpg";
 
 function Hero_Section() {
   return (

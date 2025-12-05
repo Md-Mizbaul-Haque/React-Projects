@@ -1,19 +1,18 @@
-import React, { Children } from "react";
 import Layout from "./Layout";
 import Service from "../../Pages/Service";
 import Home from "../../Pages/Home";
 import About from "../../Pages/About";
 import Contect from "../../Pages/Contect";
+import BlankLayout from "./blankLayout";
+import Settings from "../../Pages/Settings";
 
-
-
-export const routes = () => [
+export const route = [
   {
     element: <Layout />,
-    Children: [
+    children: [
       {
         element: <Home />,
-        path: "/home",
+        path: "/",
       },
       {
         element: <About />,
@@ -26,6 +25,15 @@ export const routes = () => [
       {
         element: <Service />,
         path: "/service",
+      },
+    ],
+  },
+  {
+    element: <BlankLayout />,
+    children: [
+      {
+        element: <Settings />,
+        path: "/settings",
       },
     ],
   },

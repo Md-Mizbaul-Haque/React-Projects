@@ -1,9 +1,9 @@
-import { useState } from "react";
+
 import { useRoutes } from "react-router-dom";
-import { routes } from "./Components/Layout/Routes";
+import { route } from "./Components/Layout/Routes";
 function App() {
-  const element = useRoutes(routes);
-  return element;
+  const apps = useRoutes(route);
+  return apps;
 }
 
-export default App;
+export default App

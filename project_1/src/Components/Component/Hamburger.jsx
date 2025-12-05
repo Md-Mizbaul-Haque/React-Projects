@@ -7,6 +7,7 @@ import { RiSettings5Fill } from "react-icons/ri";
 import Capitalize from "./Capitalize";
 
 function Hamburger() {
+  const navigate = useNavigate();
   const [showThemeButton, setShowThemeButton] = useState("");
   const [theme, setTheme] = useDarkmodeToggle();
   const [openHamburger, setOpenHamburger] = useState(false);
@@ -43,7 +44,7 @@ function Hamburger() {
     <div className="relative dark:text-white">
       <GiHamburgerMenu
         className="cursor-pointer"
-        onClick={() => setOpenHamburger(  !openHamburger)}
+        onClick={() => setOpenHamburger(!openHamburger)}
       />
       {openHamburger && (
         <div
@@ -58,7 +59,7 @@ function Hamburger() {
                     setTheme(theme == "light" ? "dark" : "light");
                   }
                   if (item.path) {
-                    Navigate(item.path);
+                    navigate(item.path);
                     setOpenHamburger(false);
                   }
                 }}

@@ -1,1 +1,19 @@
-@import 'tailwindcss'
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --blackNav: oklch(14.5% 0 0);
+  --whiteText: oklch(92.2% 0 0);
+  --grayText: oklch(27.8% 0.033 256.848);
+  --blackText: oklch(21% 0.006 285.885);
+  --blueShadow: oklch(54.6% 0.245 262.881);
+}
+.dark {
+  --blueShadow: oklch(54.6% 0.245 262.881);
+  --blackBg: oklch(21% 0.006 285.885);
+}
+
+html,
+body {
+  transition: background-color 0.5s ease, color 0.4s ease;
+}

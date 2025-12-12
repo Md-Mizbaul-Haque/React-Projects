@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body {
+  color: rgb(20, 19, 19);
+  margin: 0;
+  padding: 0;
+  background-color: rgb(237, 237, 237);
+}
+
+
+.no-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+
+

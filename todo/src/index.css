@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.todo-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.todo-scroll::-webkit-scrollbar-thumb {
+  background: #fb7185;
+  border-radius: 8px;
+  
+}
+
+.todo-scroll::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  
+}
